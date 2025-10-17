@@ -3,6 +3,10 @@ on:
   schedule:
     - cron: '0 10 * * *' # Todos los días a las 10:00 UTC
   workflow_dispatch:
+
+permissions:
+  contents: write
+  
 jobs:
   auto_commit:
     runs-on: ubuntu-latest
